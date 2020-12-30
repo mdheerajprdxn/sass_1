@@ -1,45 +1,28 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
-  <title>Client</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
+  <title>Marketing</title>
 
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <!-- <meta name="description" lang="en" content=""> -->
+
+  <!-- <meta name="keywords" lang="en" content=""> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
 </head>
 
@@ -48,17 +31,140 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <nav>
+        <ul>
+          <li> <a href="./index.html" title="Home">home</a> </li>
+          <li> <a href="#FIXME" title="Plans">plans</a> </li>
+          <li> <a href="#FIXME" title="About">about</a> </li>
+          <li> <a href="#FIXME" title="Contact">contact</a> </li>
+        </ul>
+      </nav>
+      <h1>marketing</h1>
+      <span>Template by w3.css</span>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
+      <!-- Slider start -->
+      <div class="slider">
+        <div class="wrapper">
+          <ul>
+            <li class="active"><img src="assets/images/slider1.jpg" alt="slider"></li>
+            <li><img src="assets/images/slider2.jpg" alt="slider"></li>
+            <li><img src="assets/images/slider3.jpg" alt="slider"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Slider end -->
 
+      <!-- What we offer start -->
+      <section class="what-we-offer">
+        <div class="wrapper">
+          <h2>what we offer</h2>
+          <ul>
+            <li>
+              <h3>design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor!</p>
+            </li>
+            <li>
+              <h3>branding</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor!</p>
+            </li>
+            <li>
+              <h3>consultation</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor!</p>
+            </li>
+            <li>
+              <h3>promises</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- What we offer end -->
+
+      <!-- Pricing start -->
+      <section class="pricing">
+        <div class="wrapper">
+          <h2>pricing plans</h2>
+          <span>Choose a pricing plan that fits your needs.</span>
+          <ul>
+            <li>
+              <h3>basic</h3>
+              <ul>
+                <li> <strong>10GB</strong> storage</li>
+                <li> <strong>10</strong> emails</li>
+                <li> <strong>10</strong> domains</li>
+                <li> <strong>endless</strong> support</li>
+                <li class="price"> <strong>$ 10</strong> per month </li>
+                <li> <button>sign up</button> </li>
+              </ul>
+            </li>
+            <li>
+              <h3>pro</h3>
+              <ul>
+                <li> <strong>25GB</strong> storage</li>
+                <li> <strong>25</strong> emails</li>
+                <li> <strong>25</strong> domains</li>
+                <li> <strong>endless</strong> support</li>
+                <li class="price"> <strong>$ 25</strong> per month </li>
+                <li> <button>sign up</button> </li>
+              </ul>
+            </li>
+            <li>
+              <h3>premium</h3>
+              <ul>
+                <li> <strong>50GB</strong> storage</li>
+                <li> <strong>50</strong> emails</li>
+                <li> <strong>50</strong> domains</li>
+                <li> <strong>endless</strong> support</li>
+                <li class="price"> <strong>$ 50</strong> per month </li>
+                <li> <button>sign up</button> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Pricing end -->
+
+      <!-- who we are start -->
+      <section class="who-we-are">
+        <ul class="wrapper">
+          <li>
+            <article>
+              <img src="assets/images/portrait.jpg" alt="Jane Doe">
+              <h3>jane doe</h3>
+              <span>CEO & Founder</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, molestias!</p>
+              <button>contact</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="assets/images/portrait.jpg" alt="Jane Doe">
+              <h3>mike ross</h3>
+              <span>art director</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, molestias!</p>
+              <button>contact</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="assets/images/portrait.jpg" alt="Jane Doe">
+              <h3>john doe</h3>
+              <span>designer</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, molestias!</p>
+              <button>contact</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- who we are end -->
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -66,7 +172,8 @@
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="assets/js/script.js"></script> -->
 </body>
+
 </html>
