@@ -2,6 +2,18 @@ $bgDarkGrey: #616161;
 $bgGrey: #bbbbbb;
 $bgLightGrey: #f1f1f1;
 
+@mixin heading {
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+@mixin heading-underline {
+  @include heading();
+  margin-bottom: 40px;
+  border-bottom: 5px solid $bgGrey;
+}
+
 header {
   nav {
     background-color: $bgLightGrey;
@@ -84,5 +96,43 @@ header {
     background-color: #fff;
     border-radius: 50%;
     border: none;
+  }
+}
+
+.what-we-offer {
+  margin: 50px 0;
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  h2 {
+    @include heading-underline();
+  }
+  ul {
+    display: flex;
+    li {
+      padding: 40px 20px;
+      font-size: 15px;
+      h3 {
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+    }
+    li:nth-child(1) {
+      background-color: $bgLightGrey;
+    }
+    li:nth-child(2) {
+      background-color: $bgGrey;
+    }
+    li:nth-child(3) {
+      color: #fff;
+      background-color: $bgDarkGrey;
+    }
+    li:nth-child(4) {
+      color: #fff;
+      background-color: #000;
+    }
   }
 }
