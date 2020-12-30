@@ -18,8 +18,9 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
+  <script src="https://kit.fontawesome.com/ca9cae5ddb.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css"> -->
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/reset.css">
@@ -48,13 +49,23 @@
     <!--header section start-->
     <!--main section start-->
     <main>
+
       <!-- Slider start -->
-      <div class="slider">
-        <ul class="wrapper">
+      <div class="wrapper">
+        <ul class="slider">
           <li class="active"><img src="assets/images/slider1.jpg" alt="slider"></li>
           <li><img src="assets/images/slider2.jpg" alt="slider"></li>
           <li><img src="assets/images/slider3.jpg" alt="slider"></li>
         </ul>
+        <div class="slider-nav">
+          <button class="icon left-arrow"></button>
+          <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button class="icon right-arrow"></button>
+        </div>
       </div>
       <!-- Slider end -->
 
@@ -80,6 +91,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor!</p>
             </li>
           </ul>
+
         </div>
       </section>
       <!-- What we offer end -->
