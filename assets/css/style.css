@@ -163,4 +163,99 @@ header h1 {
   color: #fff;
   background-color: #000;
 }
+
+.pricing .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .wrapper h2 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.pricing .wrapper > ul {
+  margin: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing .wrapper > ul > li {
+  border: 1px solid #ccc;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  text-align: center;
+}
+
+.pricing .wrapper > ul > li h3 {
+  padding: 30px 0;
+  color: #fff;
+  background-color: #000;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.pricing .wrapper > ul > li:nth-child(2) h3 {
+  background-color: #616161;
+}
+
+.pricing .wrapper > ul > li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.pricing .wrapper > ul > li ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: capitalize;
+}
+
+.pricing .wrapper > ul > li ul li.price {
+  color: #777;
+  text-transform: lowercase;
+}
+
+.pricing .wrapper > ul > li ul li.price strong {
+  margin-bottom: 15px;
+  display: block;
+  color: #000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.pricing .wrapper > ul > li ul li:last-child {
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.pricing .wrapper > ul > li ul li:last-child a {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4caf50;
+  font-size: 14px;
+}
+
+.pricing .wrapper > ul > li ul li:last-child a:hover {
+  background-color: #6ec071;
+}
 /*# sourceMappingURL=style.css.map */
