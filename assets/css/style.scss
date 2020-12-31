@@ -300,3 +300,67 @@ header {
     }
   }
 }
+
+footer {
+  margin-top: 70px;
+  padding: 30px 0;
+  background-color: $bgLightGrey;
+  .wrapper {
+    @include flexCenter(column);
+    & > * {
+      margin: 15px 0;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    &:before {
+      padding-right: 10px;
+      font-family: "Font Awesome 5 Free";
+      content: "\f062";
+      font-weight: 900;
+    }
+    &:hover {
+      border: 1px solid #000;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  .icon {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 0;
+  }
+  .icon:before {
+    font-size: 25px;
+  }
+  .facebook:before {
+    content: "\f082";
+  }
+  .instagram:before {
+    content: "\f16d";
+  }
+  .snapchat:before {
+    content: "\f2ab";
+  }
+  .pintrest:before {
+    content: "\f231";
+  }
+  .twitter:before {
+    content: "\f099";
+  }
+  .linkedIn:before {
+    content: "\f0e1";
+  }
+}
