@@ -519,4 +519,62 @@ footer .twitter:before {
 footer .linkedIn:before {
   content: "\f0e1";
 }
+
+@media screen and (max-width: 995px) {
+  .what-we-offer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .what-we-offer ul li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    height: 300px;
+  }
+  .pricing .wrapper > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pricing .wrapper > ul > li {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-bottom: 20px;
+  }
+  .who-we-are ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .who-we-are ul li {
+    margin-bottom: 20px;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .what-we-offer ul li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .pricing .wrapper > ul > li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .who-we-are ul li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+// 1024px, 995px, 767px, 540px, 480px
+
+@media screen and (max-width: 995px) {
+  .what-we-offer {
+    ul {
+      flex-wrap: wrap;
+      li {
+        box-sizing: border-box;
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    height: 300px;
+  }
+
+  .pricing {
+    .wrapper {
+      & > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        & > li {
+          flex-basis: 70%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .who-we-are {
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        margin-bottom: 20px;
+        flex-basis: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .what-we-offer {
+    ul {
+      li {
+        flex-basis: 100%;
+      }
+    }
+  }
+  .pricing {
+    .wrapper {
+      & > ul {
+        & > li {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  .who-we-are {
+    ul {
+      li {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
