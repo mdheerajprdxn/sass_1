@@ -113,7 +113,7 @@ header {
 }
 
 .what-we-offer {
-  margin: 50px 0;
+  margin: 70px 0;
   .wrapper {
     @include flexCenter(column);
   }
@@ -150,7 +150,7 @@ header {
 
 .pricing {
   .wrapper {
-    padding-top: 30px;
+    padding-top: 20px;
     @include flexCenter(column);
     h2 {
       @include heading();
@@ -342,12 +342,17 @@ footer {
       color: #000;
     }
   }
-  a {
+  span a {
     text-decoration: underline;
   }
-  .icon {
+  a.icon {
+    border-bottom: 2px solid transparent;
+    color: #000;
     font-family: "Font Awesome 5 Brands";
     font-size: 0;
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
   }
   .icon:before {
     font-size: 25px;
