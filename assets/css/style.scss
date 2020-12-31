@@ -14,6 +14,10 @@ $bgLightGrey: #f1f1f1;
   border-bottom: 5px solid $bgGrey;
 }
 
+.wrapper {
+  max-width: 1200px;
+}
+
 header {
   nav {
     background-color: $bgLightGrey;
@@ -60,24 +64,12 @@ header {
   }
 }
 
-.icon {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-.left-arrow:before {
-  content: "\f060";
-}
-
-.right-arrow:before {
-  content: "\f061";
-}
-
 .slider-nav {
   padding: 10px;
   display: flex;
   background-color: $bgDarkGrey;
   justify-content: space-between;
+
   ul {
     display: flex;
     li {
@@ -91,11 +83,25 @@ header {
       background-color: #fff;
     }
   }
+
   button {
     color: $bgDarkGrey;
     background-color: #fff;
     border-radius: 50%;
     border: none;
+  }
+
+  .icon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .left-arrow:before {
+    content: "\f060";
+  }
+
+  .right-arrow:before {
+    content: "\f061";
   }
 }
 
@@ -199,6 +205,51 @@ header {
                 background-color: lighten(#4caf50, 10%);
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.who-we-are {
+  margin: 50px 0;
+  .wrapper {
+    @include flexCenter(column);
+  }
+  h2 {
+    @include heading-underline();
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      flex-basis: 32%;
+      box-shadow: 0px 0px 10px $bgGrey;
+      font-size: 15px;
+      .desc {
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        * {
+          margin: 10px 0;
+        }
+        h3 {
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+        span {
+          text-transform: capitalize;
+          color: #777;
+        }
+        a {
+          padding: 10px 0;
+          background-color: $bgLightGrey;
+          text-align: center;
+          text-transform: capitalize;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: darken($bgLightGrey, 10%);
           }
         }
       }

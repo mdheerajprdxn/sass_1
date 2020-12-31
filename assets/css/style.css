@@ -1,3 +1,7 @@
+.wrapper {
+  max-width: 1200px;
+}
+
 header nav {
   background-color: #f1f1f1;
 }
@@ -55,19 +59,6 @@ header h1 {
   display: block;
 }
 
-.icon {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-.left-arrow:before {
-  content: "\f060";
-}
-
-.right-arrow:before {
-  content: "\f061";
-}
-
 .slider-nav {
   padding: 10px;
   display: -webkit-box;
@@ -102,6 +93,19 @@ header h1 {
   background-color: #fff;
   border-radius: 50%;
   border: none;
+}
+
+.slider-nav .icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.slider-nav .left-arrow:before {
+  content: "\f060";
+}
+
+.slider-nav .right-arrow:before {
+  content: "\f061";
 }
 
 .what-we-offer {
@@ -257,5 +261,85 @@ header h1 {
 
 .pricing .wrapper > ul > li ul li:last-child a:hover {
   background-color: #6ec071;
+}
+
+.who-we-are {
+  margin: 50px 0;
+}
+
+.who-we-are .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who-we-are h2 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #bbbbbb;
+}
+
+.who-we-are ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.who-we-are ul li {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  -webkit-box-shadow: 0px 0px 10px #bbbbbb;
+          box-shadow: 0px 0px 10px #bbbbbb;
+  font-size: 15px;
+}
+
+.who-we-are ul li .desc {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.who-we-are ul li .desc * {
+  margin: 10px 0;
+}
+
+.who-we-are ul li .desc h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.who-we-are ul li .desc span {
+  text-transform: capitalize;
+  color: #777;
+}
+
+.who-we-are ul li .desc a {
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.who-we-are ul li .desc a:hover {
+  background-color: #d8d8d8;
 }
 /*# sourceMappingURL=style.css.map */
