@@ -14,6 +14,12 @@ $bgLightGrey: #f1f1f1;
   border-bottom: 5px solid $bgGrey;
 }
 
+@mixin flexCenter($flow) {
+  display: flex;
+  flex-flow: $flow;
+  align-items: center;
+}
+
 .wrapper {
   max-width: 1200px;
 }
@@ -34,8 +40,9 @@ header {
       color: #000;
       text-transform: capitalize;
       border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
       &:hover {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #555;
       }
     }
   }
@@ -105,12 +112,6 @@ header {
   }
 }
 
-@mixin flexCenter($flow) {
-  display: flex;
-  flex-flow: $flow;
-  align-items: center;
-}
-
 .what-we-offer {
   margin: 50px 0;
   .wrapper {
@@ -149,9 +150,14 @@ header {
 
 .pricing {
   .wrapper {
+    padding-top: 30px;
     @include flexCenter(column);
     h2 {
       @include heading();
+    }
+    span {
+      font-size: 14px;
+      margin: 15px 0 40px 0;
     }
     & > ul {
       margin: 30px 0;
@@ -190,6 +196,7 @@ header {
               font-size: 35px;
               font-weight: 400;
             }
+            font-size: 14px;
             color: #777;
             text-transform: lowercase;
           }
