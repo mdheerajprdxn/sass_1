@@ -24,6 +24,7 @@ $bgLightGrey: #f1f1f1;
   max-width: 1200px;
 }
 
+// Header
 header {
   nav {
     background-color: $bgLightGrey;
@@ -54,6 +55,7 @@ header {
   }
 }
 
+// Slider
 .slider {
   margin-top: 40px;
   height: 500px;
@@ -112,6 +114,7 @@ header {
   }
 }
 
+// What we offer
 .what-we-offer {
   margin: 70px 0;
   .wrapper {
@@ -148,6 +151,7 @@ header {
   }
 }
 
+// Pricing
 .pricing {
   .wrapper {
     padding-top: 20px;
@@ -219,6 +223,7 @@ header {
   }
 }
 
+// Who we are
 .who-we-are {
   margin: 50px 0;
   .wrapper {
@@ -264,6 +269,7 @@ header {
   }
 }
 
+// Contact
 .contact {
   .wrapper {
     @include flexCenter(column);
@@ -308,6 +314,7 @@ header {
   }
 }
 
+// Footer
 footer {
   margin-top: 70px;
   padding: 30px 0;
