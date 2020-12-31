@@ -256,3 +256,47 @@ header {
     }
   }
 }
+
+.contact {
+  .wrapper {
+    @include flexCenter(column);
+  }
+  h2 {
+    @include heading-underline();
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    .form-element {
+      display: flex;
+      flex-flow: column;
+      margin: 10px 0;
+      text-transform: capitalize;
+      input {
+        padding: 10px;
+        border: none;
+        box-shadow: inset 0 0 2px #888;
+        background: #fff;
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    button {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #000;
+      background-color: #000;
+      color: #fff;
+      text-transform: capitalize;
+      transition: 0.3s all ease;
+      &:hover {
+        border: 1px solid #000;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
